@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Anil Joshi — B.Tech student from Kathmandu. Learn more about me, my projects, and how to contact me.">
+    <meta name="keywords" content="Anil Joshi, B.Tech, Student, Kathmandu, Portfolio, Tech, Engineering">
+    <meta name="author" content="Anil Joshi">
+    <title>Anil Joshi | B.Tech Student from Kathmandu</title>
+
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="Anil Joshi | B.Tech Student from Kathmandu">
+    <meta property="og:description" content="Explore Anil Joshi's personal website. B.Tech student passionate about technology and innovation.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" type="image/png">
+
+    <style>
+        /* ======= Global Styles ======= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0078d7;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: #005fa3;
+            display: flex;
+            justify-content: center;
+            padding: 0.8rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 3rem 10%;
+        }
+
+        #about {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        #about h2 {
+            color: #0078d7;
+            margin-bottom: 1rem;
+        }
+
+        #about p {
+            font-size: 1.1rem;
+        }
+
+        #contact {
+            background: #0078d7;
+            color: #fff;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        #contact h2 {
+            margin-bottom: 1rem;
+        }
+
+        #contact p {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #005fa3;
+            color: #fff;
+        }
+
+        /* ======= Responsive Design ======= */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 0.5rem 0;
+            }
+        }
+
+        /* ======= Animation ======= */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Anil Joshi</h1>
+        <p>B.Tech Student | Tech Enthusiast | Based in Kathmandu</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>Hello! I'm <strong>Anil Joshi</strong>, a passionate B.Tech student from Kathmandu. I enjoy learning about technology, programming, and innovation. My goal is to contribute to meaningful tech solutions and grow as an engineer.</p>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2>Contact Me</h2>
+        <p>📍 <strong>Address:</strong> Kathmandu, Nepal</p>
+        <p>📧 <strong>Email:</strong> <a href="mailto:tech.aniljoshi@gmail.com" style="color:#ffd700;">tech.aniljoshi@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Anil Joshi | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // ======= Fade-in animation on scroll =======
+        const elements = document.querySelectorAll('.fade-in');
+        window.addEventListener('scroll', () => {
+            elements.forEach(el => {
+                const position = el.getBoundingClientRect().top;
+                if (position < window.innerHeight - 100) {
+                    el.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
